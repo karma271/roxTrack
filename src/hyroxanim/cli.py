@@ -6,6 +6,8 @@ import argparse
 import sys
 from pathlib import Path
 
+from hyroxanim.ingest.csv_convert import convert_real_csv_to_json
+from hyroxanim.ingest.real import process_real_files
 from hyroxanim.process.transform import transform_raw_files
 from hyroxanim.synth.generate import generate_synthetic_dataset
 from hyroxanim.viz.matplotlib_anim import animate_processed_trajectories
@@ -54,6 +56,60 @@ def build_parser() -> argparse.ArgumentParser:
         type=float,
         default=1.0,
         help="Trajectory sampling interval",
+    )
+    process_real_parser = subparsers.add_parser(
+        "process-real",
+        help="Transform real race data into processed trajectories",
+    )
+    process_real_parser.add_argument(
+        "--course-path",
+        type=Path,
+        default=Path("data/synth/raw/course.json"),
+        help="Path to course JSON",
+    )
+    process_real_parser.add_argument(
+        "--splits-path",
+        type=Path,
+        default=Path("data/real/raw/athlete_splits.json"),
+        help="Path to real athlete splits JSON",
+    )
+    process_real_parser.add_argument(
+        "--out-dir",
+        type=Path,
+        default=Path("data/real/processed"),
+        help="Output directory for processed files",
+    )
+    process_real_parser.add_argument(
+        "--dt",
+        type=float,
+        default=1.0,
+        help="Trajectory sampling interval",
+    )
+    process_real_parser.add_argument(
+        "--strict",
+        action="store_true",
+        help="Fail on any athlete-level validation or transform error",
+    )
+    convert_real_csv_parser = subparsers.add_parser(
+        "convert-real-csv",
+        help="Convert flat real-race CSV splits to canonical JSON",
+    )
+    convert_real_csv_parser.add_argument(
+        "--csv-path",
+        type=Path,
+        default=Path("data/real/raw/athlete_splits.csv"),
+        help="Path to flat row-per-split CSV",
+    )
+    convert_real_csv_parser.add_argument(
+        "--out-path",
+        type=Path,
+        default=Path("data/real/raw/athlete_splits.json"),
+        help="Output JSON path",
+    )
+    convert_real_csv_parser.add_argument(
+        "--no-normalize-start",
+        action="store_true",
+        help="Keep timestamps as provided instead of normalizing per athlete to start at zero",
     )
 
     animate_parser = subparsers.add_parser("animate", help="Animate processed trajectories")
@@ -206,6 +262,50 @@ def run_command(args: argparse.Namespace) -> None:
         )
         print(f"Wrote trajectories CSV: {output_paths['csv_path']}")
         print(f"Wrote trajectories JSON: {output_paths['json_path']}")
+    elif args.command == "process-real":
+        _require_file(
+            args.course_path,
+            "Course file",
+            "Provide --course-path to a valid course file.",
+        )
+        _require_file(
+            args.splits_path,
+            "Real splits file",
+            "Provide --splits-path to a valid real splits file.",
+        )
+        result = process_real_files(
+            course_path=args.course_path,
+            splits_path=args.splits_path,
+            out_dir=args.out_dir,
+            dt=args.dt,
+            strict=args.strict,
+        )
+        print(f"Wrote trajectories CSV: {result.output_paths['csv_path']}")
+        print(f"Wrote trajectories JSON: {result.output_paths['json_path']}")
+        print(f"Processed athletes: {result.processed_athletes}")
+        print(f"Skipped athletes: {len(result.skipped_athletes)}")
+        print(f"Total athletes: {result.total_athletes}")
+        print(f"Warnings: {len(result.warnings)}")
+        for warning in result.warnings:
+            print(f"WARNING {warning.code}: {warning.message}")
+        print(f"Errors: {len(result.errors)}")
+        for error in result.errors:
+            print(f"ERROR {error.code}: {error.message}")
+    elif args.command == "convert-real-csv":
+        _require_file(
+            args.csv_path,
+            "Real splits CSV",
+            "Provide --csv-path to a valid CSV input file.",
+        )
+        result = convert_real_csv_to_json(
+            csv_path=args.csv_path,
+            out_path=args.out_path,
+            normalize_start=not args.no_normalize_start,
+        )
+        print(f"Wrote real splits JSON: {result.out_path}")
+        print(f"Athletes: {result.athlete_count}")
+        print(f"Splits: {result.split_count}")
+        print(f"Normalized start timestamps: {result.normalized_start}")
     elif args.command == "animate":
         _require_file(
             args.course_path,

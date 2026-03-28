@@ -1,0 +1,398 @@
+{
+  "athletes": [
+    {
+      "athlete_id": "athlete_001",
+      "splits": [
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "start_tunnel_sensor",
+          "timestamp": 0.0,
+          "round": null
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "main_in_sensor",
+          "timestamp": 15.0,
+          "round": 1
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "station_in_sensor",
+          "timestamp": 70.0,
+          "round": 1
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "station_out_sensor",
+          "timestamp": 210.0,
+          "round": 1
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "main_out_sensor",
+          "timestamp": 270.0,
+          "round": 1
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "main_in_sensor",
+          "timestamp": 325.0,
+          "round": 2
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "station_in_sensor",
+          "timestamp": 380.0,
+          "round": 2
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "station_out_sensor",
+          "timestamp": 560.0,
+          "round": 2
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "main_out_sensor",
+          "timestamp": 620.0,
+          "round": 2
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "main_in_sensor",
+          "timestamp": 675.0,
+          "round": 3
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "station_in_sensor",
+          "timestamp": 730.0,
+          "round": 3
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "station_out_sensor",
+          "timestamp": 900.0,
+          "round": 3
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "main_out_sensor",
+          "timestamp": 960.0,
+          "round": 3
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "main_in_sensor",
+          "timestamp": 1015.0,
+          "round": 4
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "station_in_sensor",
+          "timestamp": 1070.0,
+          "round": 4
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "station_out_sensor",
+          "timestamp": 1240.0,
+          "round": 4
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "main_out_sensor",
+          "timestamp": 1300.0,
+          "round": 4
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "main_in_sensor",
+          "timestamp": 1355.0,
+          "round": 5
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "station_in_sensor",
+          "timestamp": 1410.0,
+          "round": 5
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "station_out_sensor",
+          "timestamp": 1580.0,
+          "round": 5
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "main_out_sensor",
+          "timestamp": 1640.0,
+          "round": 5
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "main_in_sensor",
+          "timestamp": 1695.0,
+          "round": 6
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "station_in_sensor",
+          "timestamp": 1750.0,
+          "round": 6
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "station_out_sensor",
+          "timestamp": 1920.0,
+          "round": 6
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "main_out_sensor",
+          "timestamp": 1980.0,
+          "round": 6
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "main_in_sensor",
+          "timestamp": 2035.0,
+          "round": 7
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "station_in_sensor",
+          "timestamp": 2090.0,
+          "round": 7
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "station_out_sensor",
+          "timestamp": 2260.0,
+          "round": 7
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "main_out_sensor",
+          "timestamp": 2320.0,
+          "round": 7
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "main_in_sensor",
+          "timestamp": 2375.0,
+          "round": 8
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "station_in_sensor",
+          "timestamp": 2430.0,
+          "round": 8
+        },
+        {
+          "athlete_id": "athlete_001",
+          "sensor_type": "finish_line_sensor",
+          "timestamp": 2475.0,
+          "round": null
+        }
+      ]
+    },
+    {
+      "athlete_id": "athlete_002",
+      "splits": [
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "start_tunnel_sensor",
+          "timestamp": 0.0,
+          "round": null
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "main_in_sensor",
+          "timestamp": 18.0,
+          "round": 1
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "station_in_sensor",
+          "timestamp": 82.0,
+          "round": 1
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "station_out_sensor",
+          "timestamp": 245.0,
+          "round": 1
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "main_out_sensor",
+          "timestamp": 312.0,
+          "round": 1
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "main_in_sensor",
+          "timestamp": 378.0,
+          "round": 2
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "station_in_sensor",
+          "timestamp": 442.0,
+          "round": 2
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "station_out_sensor",
+          "timestamp": 610.0,
+          "round": 2
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "main_out_sensor",
+          "timestamp": 678.0,
+          "round": 2
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "main_in_sensor",
+          "timestamp": 744.0,
+          "round": 3
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "station_in_sensor",
+          "timestamp": 808.0,
+          "round": 3
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "station_out_sensor",
+          "timestamp": 980.0,
+          "round": 3
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "main_out_sensor",
+          "timestamp": 1046.0,
+          "round": 3
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "main_in_sensor",
+          "timestamp": 1112.0,
+          "round": 4
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "station_in_sensor",
+          "timestamp": 1176.0,
+          "round": 4
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "station_out_sensor",
+          "timestamp": 1348.0,
+          "round": 4
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "main_out_sensor",
+          "timestamp": 1415.0,
+          "round": 4
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "main_in_sensor",
+          "timestamp": 1482.0,
+          "round": 5
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "station_in_sensor",
+          "timestamp": 1547.0,
+          "round": 5
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "station_out_sensor",
+          "timestamp": 1722.0,
+          "round": 5
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "main_out_sensor",
+          "timestamp": 1791.0,
+          "round": 5
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "main_in_sensor",
+          "timestamp": 1860.0,
+          "round": 6
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "station_in_sensor",
+          "timestamp": 1926.0,
+          "round": 6
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "station_out_sensor",
+          "timestamp": 2105.0,
+          "round": 6
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "main_out_sensor",
+          "timestamp": 2172.0,
+          "round": 6
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "main_in_sensor",
+          "timestamp": 2240.0,
+          "round": 7
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "station_in_sensor",
+          "timestamp": 2307.0,
+          "round": 7
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "station_out_sensor",
+          "timestamp": 2489.0,
+          "round": 7
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "main_out_sensor",
+          "timestamp": 2559.0,
+          "round": 7
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "main_in_sensor",
+          "timestamp": 2627.0,
+          "round": 8
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "station_in_sensor",
+          "timestamp": 2698.0,
+          "round": 8
+        },
+        {
+          "athlete_id": "athlete_002",
+          "sensor_type": "finish_line_sensor",
+          "timestamp": 2750.0,
+          "round": null
+        }
+      ]
+    }
+  ]
+}

@@ -56,3 +56,48 @@ uv sync
 ruff check .
 pytest
 ```
+
+## Real Data CSV Workflow (M2)
+
+Use this workflow when your source data is a flat CSV.
+
+### CSV Input Contract
+
+- File is row-per-split with required columns:
+  - `athlete_id`
+  - `sensor_type`
+  - `timestamp`
+  - `round`
+- `timestamp` can be either numeric seconds (`2430.5`) or clock format (`HH:MM:SS` / `HH:MM:SS.sss`).
+- `round` should be blank for `start_tunnel_sensor` and `finish_line_sensor`, and `1..8` for other sensors.
+
+Sample input file is provided at `data/real/raw/athlete_splits.csv`.
+For Option B testing (separate real-style sample with 3 athletes and HH:MM:SS timestamps), use `data/real/raw/athlete_splits_real.csv`.
+
+### Convert CSV -> Canonical JSON
+
+Default conversion normalizes each athlete's first event to `0.0` seconds.
+
+```bash
+hyroxanim convert-real-csv \
+  --csv-path data/real/raw/athlete_splits.csv \
+  --out-path data/real/raw/athlete_splits.json
+```
+
+Disable normalization if you want to keep source timestamps as-is:
+
+```bash
+hyroxanim convert-real-csv \
+  --csv-path data/real/raw/athlete_splits.csv \
+  --out-path data/real/raw/athlete_splits.json \
+  --no-normalize-start
+```
+
+### Process Real JSON
+
+```bash
+hyroxanim process-real \
+  --course-path data/synth/raw/course.json \
+  --splits-path data/real/raw/athlete_splits.json \
+  --out-dir data/real/processed
+```
