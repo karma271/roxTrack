@@ -1,0 +1,875 @@
+{
+  "course_id": "hyrox_shifted_station_paths_v2",
+  "name": "HYROX repeated run loop with shifted station detours",
+  "segments": [
+    {
+      "segment_id": "seg_start_to_main_in",
+      "name": "Start tunnel to main in run loop (3 laps)",
+      "kind": "run",
+      "start": [
+        -0.08,
+        0.18
+      ],
+      "end": [
+        0.3,
+        0.18
+      ],
+      "points": [
+        [
+          -0.08,
+          0.18
+        ],
+        [
+          0.0,
+          0.18
+        ],
+        [
+          0.64,
+          0.18
+        ],
+        [
+          0.92,
+          0.18
+        ],
+        [
+          0.92,
+          0.82
+        ],
+        [
+          0.08,
+          0.82
+        ],
+        [
+          0.08,
+          0.18
+        ],
+        [
+          0.64,
+          0.18
+        ],
+        [
+          0.92,
+          0.18
+        ],
+        [
+          0.92,
+          0.82
+        ],
+        [
+          0.08,
+          0.82
+        ],
+        [
+          0.08,
+          0.18
+        ],
+        [
+          0.64,
+          0.18
+        ],
+        [
+          0.92,
+          0.18
+        ],
+        [
+          0.92,
+          0.82
+        ],
+        [
+          0.08,
+          0.82
+        ],
+        [
+          0.08,
+          0.18
+        ],
+        [
+          0.3,
+          0.18
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_main_in_to_station_in_r1",
+      "name": "Round 1 main in to station in",
+      "kind": "run",
+      "start": [
+        0.3,
+        0.18
+      ],
+      "end": [
+        0.18,
+        0.34
+      ],
+      "points": [
+        [
+          0.3,
+          0.18
+        ],
+        [
+          0.3,
+          0.22
+        ],
+        [
+          0.18,
+          0.22
+        ],
+        [
+          0.18,
+          0.34
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_station_in_to_station_out_r1",
+      "name": "Round 1 station in to station out",
+      "kind": "run",
+      "start": [
+        0.18,
+        0.34
+      ],
+      "end": [
+        0.18,
+        0.72
+      ],
+      "points": [
+        [
+          0.18,
+          0.34
+        ],
+        [
+          0.18,
+          0.72
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_station_out_to_main_out_r1",
+      "name": "Round 1 station out to main out",
+      "kind": "run",
+      "start": [
+        0.18,
+        0.72
+      ],
+      "end": [
+        0.64,
+        0.18
+      ],
+      "points": [
+        [
+          0.18,
+          0.72
+        ],
+        [
+          0.18,
+          0.22
+        ],
+        [
+          0.64,
+          0.22
+        ],
+        [
+          0.64,
+          0.18
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_main_in_to_station_in_r2",
+      "name": "Round 2 main in to station in",
+      "kind": "run",
+      "start": [
+        0.3,
+        0.18
+      ],
+      "end": [
+        0.26,
+        0.34
+      ],
+      "points": [
+        [
+          0.3,
+          0.18
+        ],
+        [
+          0.3,
+          0.22
+        ],
+        [
+          0.26,
+          0.22
+        ],
+        [
+          0.26,
+          0.34
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_station_in_to_station_out_r2",
+      "name": "Round 2 station in to station out",
+      "kind": "run",
+      "start": [
+        0.26,
+        0.34
+      ],
+      "end": [
+        0.26,
+        0.72
+      ],
+      "points": [
+        [
+          0.26,
+          0.34
+        ],
+        [
+          0.26,
+          0.72
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_station_out_to_main_out_r2",
+      "name": "Round 2 station out to main out",
+      "kind": "run",
+      "start": [
+        0.26,
+        0.72
+      ],
+      "end": [
+        0.64,
+        0.18
+      ],
+      "points": [
+        [
+          0.26,
+          0.72
+        ],
+        [
+          0.26,
+          0.22
+        ],
+        [
+          0.64,
+          0.22
+        ],
+        [
+          0.64,
+          0.18
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_main_in_to_station_in_r3",
+      "name": "Round 3 main in to station in",
+      "kind": "run",
+      "start": [
+        0.3,
+        0.18
+      ],
+      "end": [
+        0.33999999999999997,
+        0.34
+      ],
+      "points": [
+        [
+          0.3,
+          0.18
+        ],
+        [
+          0.3,
+          0.22
+        ],
+        [
+          0.33999999999999997,
+          0.22
+        ],
+        [
+          0.33999999999999997,
+          0.34
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_station_in_to_station_out_r3",
+      "name": "Round 3 station in to station out",
+      "kind": "run",
+      "start": [
+        0.33999999999999997,
+        0.34
+      ],
+      "end": [
+        0.33999999999999997,
+        0.72
+      ],
+      "points": [
+        [
+          0.33999999999999997,
+          0.34
+        ],
+        [
+          0.33999999999999997,
+          0.72
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_station_out_to_main_out_r3",
+      "name": "Round 3 station out to main out",
+      "kind": "run",
+      "start": [
+        0.33999999999999997,
+        0.72
+      ],
+      "end": [
+        0.64,
+        0.18
+      ],
+      "points": [
+        [
+          0.33999999999999997,
+          0.72
+        ],
+        [
+          0.33999999999999997,
+          0.22
+        ],
+        [
+          0.64,
+          0.22
+        ],
+        [
+          0.64,
+          0.18
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_main_in_to_station_in_r4",
+      "name": "Round 4 main in to station in",
+      "kind": "run",
+      "start": [
+        0.3,
+        0.18
+      ],
+      "end": [
+        0.42,
+        0.34
+      ],
+      "points": [
+        [
+          0.3,
+          0.18
+        ],
+        [
+          0.3,
+          0.22
+        ],
+        [
+          0.42,
+          0.22
+        ],
+        [
+          0.42,
+          0.34
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_station_in_to_station_out_r4",
+      "name": "Round 4 station in to station out",
+      "kind": "run",
+      "start": [
+        0.42,
+        0.34
+      ],
+      "end": [
+        0.42,
+        0.72
+      ],
+      "points": [
+        [
+          0.42,
+          0.34
+        ],
+        [
+          0.42,
+          0.72
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_station_out_to_main_out_r4",
+      "name": "Round 4 station out to main out",
+      "kind": "run",
+      "start": [
+        0.42,
+        0.72
+      ],
+      "end": [
+        0.64,
+        0.18
+      ],
+      "points": [
+        [
+          0.42,
+          0.72
+        ],
+        [
+          0.42,
+          0.22
+        ],
+        [
+          0.64,
+          0.22
+        ],
+        [
+          0.64,
+          0.18
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_main_in_to_station_in_r5",
+      "name": "Round 5 main in to station in",
+      "kind": "run",
+      "start": [
+        0.3,
+        0.18
+      ],
+      "end": [
+        0.5,
+        0.34
+      ],
+      "points": [
+        [
+          0.3,
+          0.18
+        ],
+        [
+          0.3,
+          0.22
+        ],
+        [
+          0.5,
+          0.22
+        ],
+        [
+          0.5,
+          0.34
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_station_in_to_station_out_r5",
+      "name": "Round 5 station in to station out",
+      "kind": "run",
+      "start": [
+        0.5,
+        0.34
+      ],
+      "end": [
+        0.5,
+        0.72
+      ],
+      "points": [
+        [
+          0.5,
+          0.34
+        ],
+        [
+          0.5,
+          0.72
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_station_out_to_main_out_r5",
+      "name": "Round 5 station out to main out",
+      "kind": "run",
+      "start": [
+        0.5,
+        0.72
+      ],
+      "end": [
+        0.64,
+        0.18
+      ],
+      "points": [
+        [
+          0.5,
+          0.72
+        ],
+        [
+          0.5,
+          0.22
+        ],
+        [
+          0.64,
+          0.22
+        ],
+        [
+          0.64,
+          0.18
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_main_in_to_station_in_r6",
+      "name": "Round 6 main in to station in",
+      "kind": "run",
+      "start": [
+        0.3,
+        0.18
+      ],
+      "end": [
+        0.5800000000000001,
+        0.34
+      ],
+      "points": [
+        [
+          0.3,
+          0.18
+        ],
+        [
+          0.3,
+          0.22
+        ],
+        [
+          0.5800000000000001,
+          0.22
+        ],
+        [
+          0.5800000000000001,
+          0.34
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_station_in_to_station_out_r6",
+      "name": "Round 6 station in to station out",
+      "kind": "run",
+      "start": [
+        0.5800000000000001,
+        0.34
+      ],
+      "end": [
+        0.5800000000000001,
+        0.72
+      ],
+      "points": [
+        [
+          0.5800000000000001,
+          0.34
+        ],
+        [
+          0.5800000000000001,
+          0.72
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_station_out_to_main_out_r6",
+      "name": "Round 6 station out to main out",
+      "kind": "run",
+      "start": [
+        0.5800000000000001,
+        0.72
+      ],
+      "end": [
+        0.64,
+        0.18
+      ],
+      "points": [
+        [
+          0.5800000000000001,
+          0.72
+        ],
+        [
+          0.5800000000000001,
+          0.22
+        ],
+        [
+          0.64,
+          0.22
+        ],
+        [
+          0.64,
+          0.18
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_main_in_to_station_in_r7",
+      "name": "Round 7 main in to station in",
+      "kind": "run",
+      "start": [
+        0.3,
+        0.18
+      ],
+      "end": [
+        0.6599999999999999,
+        0.34
+      ],
+      "points": [
+        [
+          0.3,
+          0.18
+        ],
+        [
+          0.3,
+          0.22
+        ],
+        [
+          0.6599999999999999,
+          0.22
+        ],
+        [
+          0.6599999999999999,
+          0.34
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_station_in_to_station_out_r7",
+      "name": "Round 7 station in to station out",
+      "kind": "run",
+      "start": [
+        0.6599999999999999,
+        0.34
+      ],
+      "end": [
+        0.6599999999999999,
+        0.72
+      ],
+      "points": [
+        [
+          0.6599999999999999,
+          0.34
+        ],
+        [
+          0.6599999999999999,
+          0.72
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_station_out_to_main_out_r7",
+      "name": "Round 7 station out to main out",
+      "kind": "run",
+      "start": [
+        0.6599999999999999,
+        0.72
+      ],
+      "end": [
+        0.64,
+        0.18
+      ],
+      "points": [
+        [
+          0.6599999999999999,
+          0.72
+        ],
+        [
+          0.6599999999999999,
+          0.22
+        ],
+        [
+          0.64,
+          0.22
+        ],
+        [
+          0.64,
+          0.18
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_main_in_to_station_in_r8",
+      "name": "Round 8 main in to station in",
+      "kind": "run",
+      "start": [
+        0.3,
+        0.18
+      ],
+      "end": [
+        0.74,
+        0.34
+      ],
+      "points": [
+        [
+          0.3,
+          0.18
+        ],
+        [
+          0.3,
+          0.22
+        ],
+        [
+          0.74,
+          0.22
+        ],
+        [
+          0.74,
+          0.34
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_station_in_to_station_out_r8",
+      "name": "Round 8 station in to station out",
+      "kind": "run",
+      "start": [
+        0.74,
+        0.34
+      ],
+      "end": [
+        0.74,
+        0.72
+      ],
+      "points": [
+        [
+          0.74,
+          0.34
+        ],
+        [
+          0.74,
+          0.72
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_station_out_to_main_out_r8",
+      "name": "Round 8 station out to main out",
+      "kind": "run",
+      "start": [
+        0.74,
+        0.72
+      ],
+      "end": [
+        0.64,
+        0.18
+      ],
+      "points": [
+        [
+          0.74,
+          0.72
+        ],
+        [
+          0.74,
+          0.22
+        ],
+        [
+          0.64,
+          0.22
+        ],
+        [
+          0.64,
+          0.18
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_main_out_to_main_in",
+      "name": "Main out to main in run loop (3 laps)",
+      "kind": "run",
+      "start": [
+        0.64,
+        0.18
+      ],
+      "end": [
+        0.3,
+        0.18
+      ],
+      "points": [
+        [
+          0.64,
+          0.18
+        ],
+        [
+          0.92,
+          0.18
+        ],
+        [
+          0.92,
+          0.82
+        ],
+        [
+          0.08,
+          0.82
+        ],
+        [
+          0.08,
+          0.18
+        ],
+        [
+          0.64,
+          0.18
+        ],
+        [
+          0.92,
+          0.18
+        ],
+        [
+          0.92,
+          0.82
+        ],
+        [
+          0.08,
+          0.82
+        ],
+        [
+          0.08,
+          0.18
+        ],
+        [
+          0.64,
+          0.18
+        ],
+        [
+          0.92,
+          0.18
+        ],
+        [
+          0.92,
+          0.82
+        ],
+        [
+          0.08,
+          0.82
+        ],
+        [
+          0.08,
+          0.18
+        ],
+        [
+          0.3,
+          0.18
+        ]
+      ]
+    },
+    {
+      "segment_id": "seg_station_in_to_finish",
+      "name": "Round 8 station in to finish line",
+      "kind": "run",
+      "start": [
+        0.74,
+        0.53
+      ],
+      "end": [
+        0.92,
+        0.53
+      ],
+      "points": [
+        [
+          0.74,
+          0.53
+        ],
+        [
+          0.92,
+          0.53
+        ]
+      ]
+    }
+  ]
+}
