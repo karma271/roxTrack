@@ -58,7 +58,9 @@ def _resolve_leg_segment_id(
         return round_id
     if legacy_id in seg:
         return legacy_id
-    raise KeyError(f"Missing segment for transition {start_sensor} -> {end_sensor} round {round_num}")
+    raise KeyError(
+        f"Missing segment for transition {start_sensor} -> {end_sensor} round {round_num}"
+    )
 
 
 def _index_events(splits: list[Split]) -> dict[tuple[str, int | None], Split]:

@@ -6,6 +6,7 @@ import argparse
 import sys
 from pathlib import Path
 
+from hyroxanim.export.viewer import export_viewer_files
 from hyroxanim.ingest.csv_convert import convert_real_csv_to_json
 from hyroxanim.ingest.real import process_real_files
 from hyroxanim.process.transform import transform_raw_files
@@ -110,6 +111,28 @@ def build_parser() -> argparse.ArgumentParser:
         "--no-normalize-start",
         action="store_true",
         help="Keep timestamps as provided instead of normalizing per athlete to start at zero",
+    )
+    export_viewer_parser = subparsers.add_parser(
+        "export-viewer",
+        help="Export compact viewer-ready JSON files",
+    )
+    export_viewer_parser.add_argument(
+        "--course-path",
+        type=Path,
+        default=Path("data/synth/raw/course.json"),
+        help="Path to course JSON",
+    )
+    export_viewer_parser.add_argument(
+        "--trajectories-csv",
+        type=Path,
+        default=Path("data/synth/processed/trajectories.csv"),
+        help="Path to processed trajectories CSV",
+    )
+    export_viewer_parser.add_argument(
+        "--out-dir",
+        type=Path,
+        default=Path("data/viewer"),
+        help="Output directory for compact viewer JSON files",
     )
 
     animate_parser = subparsers.add_parser("animate", help="Animate processed trajectories")
@@ -306,6 +329,26 @@ def run_command(args: argparse.Namespace) -> None:
         print(f"Athletes: {result.athlete_count}")
         print(f"Splits: {result.split_count}")
         print(f"Normalized start timestamps: {result.normalized_start}")
+    elif args.command == "export-viewer":
+        _require_file(
+            args.course_path,
+            "Course file",
+            "Provide --course-path to a valid course file.",
+        )
+        _require_file(
+            args.trajectories_csv,
+            "Trajectories CSV",
+            "Run `hyroxanim process-synth`/`process-real` first or provide --trajectories-csv.",
+        )
+        result = export_viewer_files(
+            course_path=args.course_path,
+            trajectories_csv=args.trajectories_csv,
+            out_dir=args.out_dir,
+        )
+        print(f"Wrote viewer course JSON: {result.course_path}")
+        print(f"Wrote viewer trajectories JSON: {result.trajectories_path}")
+        print(f"Athletes: {result.athlete_count}")
+        print(f"Points: {result.point_count}")
     elif args.command == "animate":
         _require_file(
             args.course_path,

@@ -82,3 +82,21 @@ def test_convert_real_csv_parser_supports_normalize_toggle() -> None:
     parser = build_parser()
     args = parser.parse_args(["convert-real-csv", "--no-normalize-start"])
     assert args.no_normalize_start is True
+
+
+def test_export_viewer_raises_with_missing_input_files(tmp_path: Path) -> None:
+    parser = build_parser()
+    args = parser.parse_args(
+        [
+            "export-viewer",
+            "--course-path",
+            str(tmp_path / "missing-course.json"),
+            "--trajectories-csv",
+            str(tmp_path / "missing-trajectories.csv"),
+            "--out-dir",
+            str(tmp_path / "viewer"),
+        ]
+    )
+
+    with pytest.raises(FileNotFoundError, match="Course file not found"):
+        run_command(args)

@@ -101,3 +101,56 @@ hyroxanim process-real \
   --splits-path data/real/raw/athlete_splits.json \
   --out-dir data/real/processed
 ```
+
+## Viewer Export (M3 Part 1)
+
+Export compact viewer-ready JSON from an existing course + processed trajectories CSV.
+
+```bash
+hyroxanim export-viewer \
+  --course-path data/synth/raw/course.json \
+  --trajectories-csv data/real/processed/trajectories.csv \
+  --out-dir data/viewer
+```
+
+This writes:
+- `data/viewer/course.json`
+- `data/viewer/trajectories.json`
+
+### Minimal Static Viewer (M3 Part 2)
+
+The minimal browser viewer is available at:
+- `viewer/index.html`
+- `viewer/app.js`
+
+Serve the repo root and open the viewer in your browser:
+
+```bash
+python -m http.server 8000
+```
+
+Then open:
+- `http://localhost:8000/viewer/index.html`
+
+Viewer controls (M3 Part 3):
+- Play/Pause button
+- Seek slider
+- Playback speed selector
+
+### Run Example Viewer (End-to-End)
+
+From repo root:
+
+```bash
+# 1) Export compact viewer JSON from existing artifacts
+hyroxanim export-viewer \
+  --course-path data/synth/raw/course.json \
+  --trajectories-csv data/real/processed/trajectories.csv \
+  --out-dir data/viewer
+
+# 2) Serve repository files
+python -m http.server 8000
+```
+
+Then open:
+- `http://localhost:8000/viewer/index.html`
